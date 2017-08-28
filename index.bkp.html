@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0;width:device-width">
+
+<title>CEJS 2017</title>
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body id="contentBody">
+    <div id="menu">
+        <ul>
+            <li><a href="#tickets" title="Inscrição">Inscrição</a></li>
+            <li><a href="#speakers" title="Palestrantes">Palestrantes</a></li>
+            <li><a href="#schedule" title="Agenda">Agenda</a></li>
+            <li><a href="#location" title="Local">Local</a></li>
+            <li><a href="#callforpapers" title="Call For Papers">Call For Papers</a></li>
+            <li><a href="#sponsors" title="Patrocinadores">Patrocinadores</a></li>
+            <li><a href="http://www.cejs.com.br/react-showcase.html" title="react">React Showcase</a></li>
+        </ul>
+    </div>
+
+    <div id="front">
+        <img src="images/logo.png" class="logo" />
+        <h1>CEJS <!--year--></h1>
+        <h2><!--date--> / <!--city--></h2>
+    </div>
+
+    <a name="tickets"></a>
+    <div class="section tickets">
+        <h1>Inscrição</h1>
+        <p class="text-centered">
+          Últimos tickets
+        </p>
+        <p class="text-centered">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QACA3ADZ4P6CJ" target="_blank" class="button">Inscreva-se já</a>
+        </p>
+    </div>
+
+    <a name="speakers"></a>
+    <div class="section speakers">
+        <h1>Palestrantes</h1>
+        <div class="blocks-container" id="speakers">
+            <div class="block" id="speaker-{twitter}">
+                <a name="speaker-{twitter}"></a>
+                <img src="images/speakers/{image}" />
+                <h2><a href="https://twitter.com/{twitter}" target="_blank"><!--name--></a></h2>
+                <p><!--position--></p>
+                <div class="block-hover-text">
+                    <h2><a href="https://twitter.com/{twitter}" target="_blank"><!--name--></a></h2>
+                    <p><!--bio--></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a name="schedule"></a>
+    <div class="section schedule">
+        <h1>Agenda</h1>
+        <table class="schedule-grid" id="agenda">
+            <tr>
+                <td class="schedule-hour"><!--hour--></td>
+                <td>
+                    <h2><!--title--></h2>
+                    <h3><a href="#speaker-{speaker_twitter}"><!--speaker_name--></a></h3>
+                </td>
+                <td class="schedule-photo">
+                    <a href="#speaker-{speaker_twitter}">
+                        <img src="images/speakers/{speaker_image}" />
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <a name="location"></a>
+    <div class="section location">
+        <h1>Local</h1>
+        <p><b><!--local--></b><br/><!--address--></p>
+        <div id="map"></div>
+        <p><!--local_description--></p>
+    </div>
+
+    <a name="callforpapers"></a>
+    <div class="section callforpapers">
+        <h1>Call for Papers</h1>
+        <p class="button encerrado">Call For Papers (Encerrado, apenas em 2018 agora!)</p>
+        <p>Esse ano inauguramos um formato diferente.</p>
+	      <p>Os candidatos apresentarão um Lightning Talk no dia 11 de fevereiro para os inscritos no CEJS 2017 até aquele momento.</p>
+        <p>PS: tópicos malucos ganham pontos extras ;)</p>
+        <table class="schedule-grid" id="agenda-lt">
+            <tr>
+                <td class="schedule-hour">09:00</td>
+                <td>
+                    <h2><a href="https://t.co/V6liUzoC4F">PWA já é possível?</a></h2>
+                    <h3><a href="https://twitter.com/cmilfont">Christiano Milfont</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">09:20</td>
+                <td>
+                    <h2><a href="https://speakerdeck.com/filipebarcos/pitch-lidando-com-efeitos-colaterais-com-redux-saga">Lidando com Efeitos Colaterias com Redux Saga</a></h2>
+                    <h3><a href="https://twitter.com/filipebarcos">Filipe Costa</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">09:40</td>
+                <td>
+                    <h2><a href="https://onedrive.live.com/view.aspx?resid=F867D5D7356BD41A!169585&ithint=file%2cpptx&app=PowerPoint&authkey=!AAE7SMicq58iZjA">Typescript is going to die. And why this is good for everyone in the JS community</a></h2>
+                    <h3><a href="https://twitter.com/abraao4lves">Abraão Alves</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">10:00</td>
+                <td>
+                    <h2>Web scrapy com node</h2>
+                    <h3><a href="https://twitter.com/laedanthehuman">Manoel Jose de Freitas Neto</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">10:20</td>
+                <td>
+                    <h2><a href="https://docs.google.com/presentation/d/1Sn3sU7KZxfU9W-A0Sn6Zhv037_xGvaTxpb1TFtUuh4Y/edit?usp=sharing">Como ser um dev de vergonha!</a></h2>
+                    <h3><a href="https://twitter.com/zarathon">Zarathon Maia</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">10:40</td>
+                <td>
+                    <h2><a href="https://github.com/joao-gsneto/wp-react-native-app">Crie um App nativo em React Native com Backend em Wordpress em 15 minutos (ou não)</a></h2>
+                    <h3><a href="https://twitter.com/joao_neto">João Gomes Neto</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">11:00</td>
+                <td>
+                    <h2><a href="https://speakerdeck.com/felipesousa/criando-aplicacoes-componentizadas-com-polymer-c4p-cejs-2017">Criando aplicações componentizadas com Polymer</a></h2>
+                    <h3><a href="https://twitter.com/felipz_sousa">Felipe Sousa</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">11:20</td>
+                <td>
+                    <h2><a href="https://speakerdeck.com/ythecombinator/sweet-macros-o-mine-reviewed">Sweet Macros O' Mine</a></h2>
+                    <h3><a href="https://twitter.com/ythecombinator">Matheus Albuquerque</a></h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <a name="sponsors"></a>
+    <div class="section sponsors">
+        <h1>Sponsors</h1>
+        <div class="container">
+            <h3>Gold</h3>
+            <div id='sponsors_gold'>
+                <a href="{sponsor_url}" target="_blank" class="gold-sponsor">
+                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                </a>
+            </div>
+
+            <h3>Silver</h3>
+            <div id='sponsors_silver'>
+                <a href="{sponsor_url}" target="_blank" class="silver-sponsor">
+                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                </a>
+            </div>
+
+            <h3>Bronze</h3>
+            <div id='sponsors_bronze'>
+                <a href="{sponsor_url}" target="_blank" class="bronze-sponsor">
+                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="team" class="section">
+        <h1>Trazido a vocês por:</h1>
+        <div class="dark-background">
+            <h2>Time CEJS</h2>
+            <p>Nós somos os que trabalhamos duro para trazer esse evento a vocês.</p>
+            <div class="team-headers">
+                <ul>
+                    <li>
+                        <a href="http://twitter.com/cmilfont" target="_blank">
+                            <img src="images/team/milfont.png">
+                            <div>@cmilfont</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/henriquegogo" target="_blank">
+                            <img src="images/team/henriquegogo.png">
+                            <div>@henriquegogo</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/marcelodev_" target="_blank">
+                            <img src="images/team/marcelo.png">
+                            <div>@marcelodev_</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/ketemr" target="_blank">
+                            <img src="images/team/kete.png">
+                            <div>@ketemr</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/adalto_junior" target="_blank">
+                            <img src="images/team/adalto.png">
+                            <div>@adalto_junior</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+function Component(elementId, data, propTemplate) {
+    var ctx = this;
+    var container = document.getElementById(elementId);
+    var template = propTemplate || container.innerHTML;
+
+    this.data = {};
+    this.setData = this.render = function(option, doRender) {
+        if (Array.isArray(option)) this.data = [];
+        for (var key in option) this.data[key] = option[key];
+        if (doRender != false) render();
+    }
+    this.setData(data);
+
+    function render() {
+        if (typeof ctx.beforeRender == 'function') ctx.beforeRender();
+
+        var templateRendered = ''+template;
+        for (var prop in ctx.data) {
+            var propData = ctx.data[prop];
+            if (typeof propData === "object" && !Array.isArray(propData)) {
+                if (templateRendered != template) templateRendered += template;
+                for (var i in propData) {
+                    var propDataValue = (typeof propData[i] == 'function') ? propData[i]() : propData[i];
+                    templateRendered = templateRendered.replace(new RegExp('<!--'+i+'-->|{'+i+'}', 'g'), propDataValue);
+                }
+            } else {
+                var propDataValue = (typeof propData == 'function') ? propData() : propData;
+                templateRendered = templateRendered.replace(new RegExp('<!--'+prop+'-->|{'+prop+'}', 'g'), propDataValue);
+            }
+        }
+        container.innerHTML = templateRendered;
+        for (var prop in ctx.data) {
+            var propData = ctx.data[prop];
+            if (Array.isArray(propData)) {
+                var propTemplate = document.getElementById(prop).innerHTML;
+                new Component(prop, propData, propTemplate);
+            };
+        }
+
+        if (typeof ctx.afterRender == 'function') ctx.afterRender();
+    }
+}
+
+self.contentBody = new Component('contentBody', {
+    year: '2017',
+    date: '13 de maio de 2017',
+    city: 'Fortaleza, Brasil',
+    local: 'Universidade 7 de Setembro - UNI7',
+    local_description: 'A UNI7 é uma instituição que já nasce com 66 anos de experiência educacional e o compromisso com um padrão de ensino de alto nível.',
+    address: 'Av. Alm. Maximiano da Fonseca, 1395 - Eng. Luciano Cavalcante - Fortaleza/CE',
+    ticket_url: '#',
+    speakers: [
+        {
+            name: 'Sérgio Lopes', position: 'Caelum',
+            twitter: 'sergio_caelum', image: 'sergio_lopes.jpg',
+            bio: 'Sérgio Lopes é desenvolvedor e instrutor no Alura e na Caelum. Especialista front-end, foca maior parte dos dias em mobile, responsivo e performance web. É ativo participante da comunidade em eventos, fóruns e projetos open-source. Posta bastante sobre front-end em seu blog e no twitter, além de ter lançado alguns livros pela Casa do Código. É Co-host no <a href="http://hipsters.tech/">http://hipsters.tech/</a>.'
+        },
+        {
+            name: 'Carlos Souza (Caike)', position: 'Code School',
+            twitter: 'caike', image: 'caike.jpg',
+            bio: 'Caike é desenvolvedor e instrutor na Code School, palestrante de inúmeros eventos importantes como Rubyconfbr e organizador dos Meetups do OrlandoJS. Rock Climber (escalador), CrossFiteiro e apaixonado por Metal.'
+        },
+        {
+            name: 'Emerson Leite', position: 'Globo.com',
+            twitter: 'emerleite', image: 'emerson_macedo.jpg',
+            bio: 'Emerson Macedo is a Software Architect/Developer with more than 18 years experience. Currently I work with Online Video at Globo.com, the Internet army of one of the 5 largest media conglomerates in the world and absolute leader in Latin America. From work experience prior to Globo.com, he had extensive knowledge in fields of telecommunications, insurance, banking, web portals, amongst others. He is also a founding member of the largest Node.js community in Brazil (http://groups.google.com/group/nodebr) , with 1500+ members'
+        },
+        {
+            name: 'Wagner Horta Neto', position: 'GreenMile',
+            twitter: '', image: 'wagner.png',
+            bio: ''
+        },
+        {
+            name: 'Felipe Sousa', position: 'Digital Influencers/CE',
+            twitter: 'felipz_sousa', image: 'felipe_sousa.jpg',
+            bio: 'Felipe Sousa é um Front end Developer apaixonado pela internet, dedica a maior parte do seu tempo estudando novas tecnologias e criando projetos pessoais. Trabalha atualmente na Digital Influencers/CE, é Organizer do GDG Fortaleza e deseja rodar o mundo fazendo o que ama.'
+        },
+        {
+            name: 'Filipe Costa', position: 'Freelancer',
+            twitter: 'filipebarcos', image: 'filipe_costa.jpg',
+            bio: 'Filipe é engenheiro de software com quase 8 anos de experiência, onde 4 desses são trabalhando remoto. Nos últimos tempos tem passado mais tempo com Rails e frameworks JS, como React. Organizador do GURU-CE e no tempo livre prova novas cervejas.'
+        },
+        {
+          name: 'Christiano Milfont', position: 'GreenMile',
+          twitter: 'cmilfont', image: 'milfont.png',
+          bio: 'Milfont é coordenador dos grupos XPCE, GURUCE, CEJS e JAVACE, programador, palestrante, “evangilista” (evangelista ágil), blogger, ex-colunista da revista Java Magazine, líder e instrutor da Produto Reativo e engenheiro de software na GreenMile, quase 20 anos de experiência em desenvolvimento de software, uma década com Java, alguns pouco anos com Ruby/Rails, maluco por Javascript, organizou os eventos Maré de Agilidade Fortaleza 2009/2010 e BrazilJS, JSConf BR, CEJS, além de dezenas de outros, atleta e headbanger.'
+        },
+        {
+          name: 'Felipe Moura', position: 'BrazilJS',
+          twitter: 'felipenmoura', image: 'felipe.png',
+          bio: 'Nesta palestra, falaremos sobre as Progressive Web Apps, como chegamos neste ponto e o que realmente pode-se fazer com elas! <br/> Falaremos muito de Service Workers e você não sairá deste evento sem entender como eles funcionam! Iremos para casa sabendo implementar cache, redirects e tratar até mesmo erros 404 usando somente javascript.'
+        }
+    ],
+    agenda: [
+        {
+            hour: '7:20', title: 'Recepção e credenciamento',
+            speaker_twitter: '', speaker_name: '',
+            speaker_image: 'blank.png'
+        },
+        {
+            hour: '8:00', title: 'Lidando com Efeitos Colaterias com Redux Saga',
+            speaker_twitter: 'filipebarcos', speaker_name: 'Filipe Costa',
+            speaker_image: 'filipe_costa.jpg'
+        },
+        {
+            hour: '09:00', title: 'Criando aplicações componentizadas com Polymer',
+            speaker_twitter: 'felipz_sousa', speaker_name: 'Felipe Sousa',
+            speaker_image: 'felipe_sousa.jpg'
+        },
+        {
+            hour: '10:00', title: 'Coffee Break',
+            speaker_twitter: '', speaker_name: '',
+            speaker_image: 'blank.png'
+        },
+        {
+            hour: '11:00', title: 'Dê à Web o poder da Web! PWAs.',
+            speaker_twitter: 'felipenmoura', speaker_name: 'Felipe Nascimento de Moura',
+            speaker_image: 'felipe.png'
+        },
+        {
+            hour: '12:00', title: 'Estruturas de Dados na Prática',
+            speaker_twitter: 'caike', speaker_name: 'Carlos Souza (Caike)',
+            speaker_image: 'caike.jpg'
+        },
+        {
+            hour: '13:00', title: 'Intervalo do almoço',
+            speaker_twitter: '', speaker_name: '',
+            speaker_image: 'blank.png'
+        },
+        {
+            hour: '14:00', title: 'Node.js in 2017 - How, Why and for What',
+            speaker_twitter: 'emerleite', speaker_name: 'Emerson Leite',
+            speaker_image: 'emerson_macedo.jpg'
+        },
+        {
+            hour: '15:00', title: 'Performance na web: muito além do carregamento',
+            speaker_twitter: 'sergio_caelum', speaker_name: 'Sérgio Lopes',
+            speaker_image: 'sergio_lopes.jpg'
+        },
+        {
+            hour: '16:00', title: 'Coffee Break',
+            speaker_twitter: '', speaker_name: '',
+            speaker_image: 'blank.png'
+        },
+        {
+            hour: '17:00', title: 'Monad is just a monoid in the category of endofunctors',
+            speaker_twitter: '', speaker_name: 'Wagner Horta Neto',
+            speaker_image: 'wagner.png'
+        },
+        {
+            hour: '18:00', title: 'Progressive Web App já é possível?',
+            speaker_twitter: 'cmilfont', speaker_name: 'Christiano Milfont',
+            speaker_image: 'milfont.png'
+        },
+        {
+            hour: '19:00', title: '',
+            speaker_twitter: '', speaker_name: 'Photo Family',
+            speaker_image: 'blank.png'
+        }
+    ],
+    sponsors_gold: [
+        {
+            sponsor_name: 'Alura', sponsor_image: 'alura.png',
+            sponsor_url: 'http://www.alura.com.br'
+        },
+        {
+            sponsor_name: 'Caelum', sponsor_image: 'caelum.svg',
+            sponsor_url: 'http://www.caelum.com.br'
+        },
+        {
+            sponsor_name: 'Casa do Código', sponsor_image: 'casa_do_codigo.svg',
+            sponsor_url: 'http://www.casadocodigo.com.br'
+        },
+        {
+            sponsor_name: 'SAS', sponsor_image: 'sas.png',
+            sponsor_url: 'http://novo.portalsas.com.br/'
+        },
+        {
+            sponsor_name: 'Produto Reativo', sponsor_image: 'produtoreativo.png',
+            sponsor_url: 'http://www.produtoreativo.com.br'
+        }
+    ],
+    sponsors_silver: [
+        {
+          sponsor_name: 'Fortes Informática', sponsor_image: 'fortes.png',
+          sponsor_url: 'http://www.fortestecnologia.com.br/'
+        },
+        {
+            sponsor_name: 'Code School', sponsor_image: 'codeschool.png',
+            sponsor_url: 'http://www.codeschool.com'
+        },
+        {
+            sponsor_name: 'Greenmile', sponsor_image: 'greenmile.png',
+            sponsor_url: 'http://www.greenmile.com'
+        },
+        {
+          sponsor_name: 'TriadWorks', sponsor_image: 'triadworks.png',
+          sponsor_url: 'http://www.triadworks.com.br'
+        },
+        {
+            sponsor_name: 'Casa Magalhães', sponsor_image: 'casamagalhaes.png',
+            sponsor_url: 'http://www.casamagalhaes.com.br'
+        }
+    ],
+    sponsors_bronze: [
+        {
+            sponsor_name: 'Unigex', sponsor_image: 'unigex.png',
+            sponsor_url: 'http://www.unigex.com.br'
+        },
+        {
+            sponsor_name: 'Repassi', sponsor_image: 'repassi.png',
+            sponsor_url: 'http://www.repassi.com.br'
+        }
+    ]
+});
+</script>
+
+<script>
+// Google Maps -3.732623,-38.467963
+// --------------------------------------------------------------------------------
+function initialize() {
+  var mapOptions = {
+    center: new google.maps.LatLng(-3.7710261,-38.4857209),
+    zoom: 16,
+    mapTypeControl: false,
+    scrollwheel: false,
+    draggable: false,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    },
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.SMALL
+    }
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  var centerMap = new google.maps.LatLng(-3.7710261,-38.4857209);
+  var marker = new google.maps.Marker({ position: centerMap, map: map });
+
+};
+
+function loadMapScript() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+      'callback=initialize';
+  document.body.appendChild(script);
+};
+
+window.onload = function() {
+    loadMapScript();
+};
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43172240-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- use discount code EASTEREGG for a free tix -->
+</body>
+</html>
