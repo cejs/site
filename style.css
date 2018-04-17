@@ -53,8 +53,8 @@ a.active {
     margin-bottom: 55px;
     height: 428px;
     text-align: center;
-    background: url(images/front.jpg) center no-repeat;
     background-size: cover;
+    background-color: #2B173C;
 }
 #front h1, #front h2 {
     position: relative;
