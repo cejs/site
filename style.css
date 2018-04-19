@@ -1,17 +1,19 @@
 html {
     font-family: "Open Sans", Arial, sans-serif;
+    background: #2B173C;
 }
 body {
     margin: 0;
     font-size: 13px;
-    color: #444;
+    color: white;
+    background: #2B173C;
 }
 body > div {
     position: relative;
 }
 a[href] {
     text-decoration: none;
-    color: #444;
+    color: white;
 }
 a[href]:hover {
     text-decoration: underline;
@@ -24,8 +26,8 @@ a.active {
     position: fixed;
     width: 100%;
     z-index: 1;
-    background: #FFF;
-    border-top: 10px solid #F5F5F5;
+    background: #2B173C;
+    border-top: 10px solid #2B173C;
     border-bottom: 1px solid #EEE;
 }
 #menu ul {
@@ -59,7 +61,7 @@ a.active {
 #front h1, #front h2 {
     position: relative;
     margin: 0;
-    top: 150px;
+    top: 80px;
     font-weight: normal;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);
@@ -74,7 +76,7 @@ a.active {
 }
 #front .logo {
     position: relative;
-    top: 150px;
+    top: 60px;
 }
 
 #team {
@@ -158,6 +160,15 @@ a.active {
 .section a[href] {
     color: #2C7BBF;
     font-weight: bold;
+}
+
+.section.callforpapers a[href]{
+    color: #2B173C;
+}
+.section.callforpapers {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
 }
 
 .blocks-container {
@@ -287,12 +298,16 @@ a.active {
     #menu { display: none; }
 
     #front { top: 0; margin-bottom: 0; height: 300px; }
-    #front h1, #front h2, #front .logo { top: 90px; }
+    #front h1, #front h2, #front .logo { top: 25px; }
     #front h1 { font-size: 40px; }
     #front h2 { font-size: 20px; }
 
     .section.speakers { margin: 0; }
     .section.sponsors { margin: 0 10px; }
+    .section.callforpapers a[href] {
+        display: flex;
+        flex-direction: column;
+    }
 
     #team h1 { font-size: 35px; }
 
