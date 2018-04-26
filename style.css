@@ -1,19 +1,18 @@
 html {
     font-family: "Open Sans", Arial, sans-serif;
-    background: #2B173C;
+    background: #FFF;
 }
 body {
     margin: 0;
     font-size: 13px;
-    color: white;
-    background: #2B173C;
+    color: #2B173C;
 }
 body > div {
     position: relative;
 }
 a[href] {
     text-decoration: none;
-    color: white;
+    color: #2B173C;
 }
 a[href]:hover {
     text-decoration: underline;
@@ -25,7 +24,8 @@ a.active {
 #menu {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+    color: #FFF;
     background: #2B173C;
     border-top: 10px solid #2B173C;
     border-bottom: 1px solid #EEE;
@@ -44,6 +44,7 @@ a.active {
 #menu a {
     line-height: 44px;
     text-transform: uppercase;
+    color: #FFF;
     outline: 0;
 }
 #menu a.active {
@@ -53,21 +54,28 @@ a.active {
 #front {
     top: 55px;
     margin-bottom: 55px;
-    height: 428px;
     text-align: center;
-    background-size: cover;
     background-color: #2B173C;
+}
+#front:before {
+    content: "";
+    background-image: url(images/people-gray.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+    top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
 }
 #front h1, #front h2 {
     position: relative;
     margin: 0;
-    top: 80px;
     font-weight: normal;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);
     color: #fff;
 }
 #front h1 {
+    margin-top: 70px;
     font-size: 72px;
 }
 #front h2 {
@@ -80,10 +88,8 @@ a.active {
 }
 
 #team {
-    height: 280px;
     color: #FFF;
-    background-size: cover !important;
-    background: url(images/people.jpg) no-repeat center 23%;
+    background-color: #2B173C;
     text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);
 }
 #team.section {
@@ -99,10 +105,12 @@ a.active {
     font-size: 31px;
     text-transform: uppercase;
 }
+#team a {
+    color: #FFF;
+}
 
 .dark-background {
     padding: 10px;
-    background: rgba(0,0,0,0.7);
 }
 
 #map {
@@ -162,10 +170,11 @@ a.active {
     font-weight: bold;
 }
 
-.section.callforpapers a[href]{
+.callforpapers a[href]{
     color: #2B173C;
 }
-.section.callforpapers {
+.callforpapers {
+    position: relative;
     display: flex;
     justify-content: center;
     padding-top: 60px;
