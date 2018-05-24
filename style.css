@@ -303,6 +303,29 @@ a.active {
     list-style: none;
 }
 
+.inscricoes{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#contentBody > div.section.inscricoes > form > input[type="submit"]:nth-child(3) {
+  background: #d9d934;
+  font-family: Arial;
+  color: #1f1a1f;;
+  font-size: 30px;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
+#contentBody > div.section.inscricoes > form > input[type="submit"]:nth-child(3):hover {
+  background: #d9d934;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 @media (max-width: 654px) {
     #menu { display: none; }
 
