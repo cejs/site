@@ -175,7 +175,6 @@ a.active {
 }
 .callforpapers {
     position: relative;
-    display: flex;
     justify-content: center;
     padding-top: 60px;
 }
@@ -311,7 +310,7 @@ a.active {
 }
 
 #contentBody > div.section.inscricoes > form > input[type="submit"]:nth-child(3) {
-  background: #d9d934;
+  background: #f1f11f;
   font-family: Arial;
   color: #1f1a1f;;
   font-size: 30px;
@@ -320,7 +319,7 @@ a.active {
 }
 
 #contentBody > div.section.inscricoes > form > input[type="submit"]:nth-child(3):hover {
-  background: #d9d934;
+  background: #f1f11f;
   text-decoration: none;
   cursor: pointer;
 }
