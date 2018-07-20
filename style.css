@@ -166,7 +166,6 @@ a.active {
     line-height: 25px;
 }
 .section a[href] {
-    color: #2C7BBF;
     font-weight: bold;
 }
 
@@ -307,6 +306,16 @@ a.active {
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+}
+
+.inscricoes a{ 
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    background-color: #FF9B27;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 1;
 }
 
 #contentBody > div.section.inscricoes > form > input[type="submit"]:nth-child(3) {
