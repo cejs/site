@@ -15,6 +15,7 @@
     <div id="menu">
         <ul>
             <li><a href="https://www.sympla.com.br/cejs-2018__325338" title="Inscrições" target="_blank">Inscrições</a></li>
+            <li><a href="#speakers" title="Palestrantes">Palestrantes</a></li>
             <li><a href="#callforpapers" title="Call for Papers">Lightning Talks</a></li>
             <li><a href="#location" title="Local">Local</a></li>
             <li><a href="#sponsors" title="Patrocinadores">Patrocinadores</a></li>
@@ -37,78 +38,103 @@
             </a>
     </div>
 
-    <a name="callforpapers"></a>
-        <div class="section callforpapers">
-            <h1>Lightning Talks</h1>
-            <table class="schedule-grid" id="agenda-lt">
-                <tr>
-                    <td class="schedule-hour">08:30</td>
-                    <td><h2> Credenciamento </h2></td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">09:00</td>
-                    <td><h2> Apresentação do evento </h2></td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">09:10</td>
-                    <td>
-                        <h2>React Router + GraphQL</h2>
-                        <h3><a href="https://twitter.com/adalto_junior">Adalto Ferreira Evangelista Junior</a></h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">09:30</td>
-                    <td>
-                        <h2>React Server Side Rendering.</h2>
-                        <h3><a href="https://twitter.com/cjpatoilo">Carlos Patoilo</a></h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">09:50</td>
-                    <td>
-                        <h2>Transformação Digital, Cultura e Soluções com Stack JS</h2>
-                        <h3><a href="https://twitter.com/@alane.io">Alane Pontes</a>/<a href="https://twitter.com/KewersonHugo">Kewerson Hugo</a></h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">10:10</td>
-                    <td>
-                        <h2>(Try to) Avoid React Native development being a nightmare</h2>
-                        <h3><a href="https://twitter.com/franzejr">Franzé Jr.</a></h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">10:30</td>
-                    <td><h2>Coffee Break/Network</h2></td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">11:00</td>
-                    <td><h2>Apresentação dos Patrocinadores</h2></td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">11:05</td>
-                    <td>
-                        <h2>Blockchain + Vue.js: Uma combinação poderosa na criação de smart-contracts</h2>
-                        <h3><a href="https://twitter.com/Ziggoto">Fábio Theophilo</a></h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">11:25</td>
-                    <td>
-                        <h2>React + Statecharts - Repensando seu frontend</h2>
-                        <h3><a href="https://twitter.com/filipem_th">Filipe Monteiro</a></h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="schedule-hour">11:45</td>
-                    <td>
-                        <h2>Mantendo a estabilidade de seu Frontend com pipeline de CI/CD</h2>
-                        <h3><a href="https://twitter.com/yuriadams">Yuri Adams</a></h3>
-                    </td>
-                </tr>
-            </table>
+    <a name="speakers"></a>
+    <div class="section speakers">
+        <h1>Palestras Confirmados</h1>
+        <div id='speakers'>
+            <div class="speaker_talk">
+                <div class="left">
+                    <div class="talk_details">
+                        <h2>{talk_title}</h2>
+                        <!-- <p>{talk_description}</p> -->
+                    </div>
+                    <div class="speaker_details">
+                        <a href="{url}" target="_blank"><h3>{name}</h3></a>
+                        <span>{title}</span>
+                    </div>
+                </div>
+                <a href="{url}" target="_blank">
+                    <img src="images/speakers/{image}" alt="{name}">
+                </a>
+            </div>
+            
+            
         </div>
+    </div>
 
+    <a name="callforpapers"></a>
+    <div class="section callforpapers">
+        <h1>Lightning Talks</h1>
+        <table class="schedule-grid" id="agenda-lt">
+            <tr>
+                <td class="schedule-hour">08:30</td>
+                <td><h2> Credenciamento </h2></td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">09:00</td>
+                <td><h2> Apresentação do evento </h2></td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">09:10</td>
+                <td>
+                    <h2>React Router + GraphQL</h2>
+                    <h3><a href="https://twitter.com/adalto_junior">Adalto Ferreira Evangelista Junior</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">09:30</td>
+                <td>
+                    <h2>React Server Side Rendering.</h2>
+                    <h3><a href="https://twitter.com/cjpatoilo">Carlos Patoilo</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">09:50</td>
+                <td>
+                    <h2>Transformação Digital, Cultura e Soluções com Stack JS</h2>
+                    <h3><a href="https://twitter.com/@alane.io">Alane Pontes</a>/<a href="https://twitter.com/KewersonHugo">Kewerson Hugo</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">10:10</td>
+                <td>
+                    <h2>(Try to) Avoid React Native development being a nightmare</h2>
+                    <h3><a href="https://twitter.com/franzejr">Franzé Jr.</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">10:30</td>
+                <td><h2>Coffee Break/Network</h2></td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">11:00</td>
+                <td><h2>Apresentação dos Patrocinadores</h2></td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">11:05</td>
+                <td>
+                    <h2>Blockchain + Vue.js: Uma combinação poderosa na criação de smart-contracts</h2>
+                    <h3><a href="https://twitter.com/Ziggoto">Fábio Theophilo</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">11:25</td>
+                <td>
+                    <h2>React + Statecharts - Repensando seu frontend</h2>
+                    <h3><a href="https://twitter.com/filipem_th">Filipe Monteiro</a></h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="schedule-hour">11:45</td>
+                <td>
+                    <h2>Mantendo a estabilidade de seu Frontend com pipeline de CI/CD</h2>
+                    <h3><a href="https://twitter.com/yuriadams">Yuri Adams</a></h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
     <a name="location"></a>
     <div class="section location">
         <h1>Local</h1>
@@ -260,6 +286,53 @@ self.contentBody = new Component('contentBody', {
             sponsor_name: '', sponsor_image: '',
             sponsor_url: ''
         }
+    ],
+    speakers: [
+        {
+            name: "Fernanda Bernardo",
+            title: "Engenheira de Software no Elo7",
+            talk_title: "Perceived Performance",
+            talk_description: "Perceived Performance é um termo da engenharia da computação que se refere a quão rápida uma funcionalidade de software aparenta performar sua tarefa. A Fernanda Bernardo apresentará conceitos e explicará mais sobre a importância da performance no desenvolvimento web.",
+            image: "fernanda.jpg",
+            url:"https://twitter.com/Feh_Bernardo",
+
+        },
+        {
+            name: "Eduardo Shinkawa",
+            title: "Javascript React Native Developer na Globo.com",
+            talk_title: "Cypress, uma alternativa ao Selenium",
+            talk_description: "Cypress é uma ferramenta de testes E2E que surge com uma das alternativas em Javascript ao Selenium. Vamos aprender mais sobre essa ferramenta!",
+            image: "shin.jpg",
+            url:"https://twitter.com/dushin84",
+
+        },
+        {
+            name: "Carlos Patoiolo",
+            title: "Javascript React Native Developer na Globo.com",
+            talk_title: "React SSR: Renderizar o React do lado do servidor",
+            talk_description: "Nesta palestra, vou conduzi-lo através de exemplos de renderização do lado do servidor incluindo a apresentação de uma case que faz uso de um roadblock comum para aplicativos React que falam com APIs.",
+            image: "patoilo.jpeg",
+            url:"https://twitter.com/cjpatoilo",
+
+        },
+        {
+            name: "Franzé Jr.",
+            title: "Engenheiro de Software na Daily Drip",
+            talk_title: "(Try to) Avoid React Native development being a nightmare",
+            talk_description: "Escrever um código em React Native e rodar perfeitamente em Android e iOS às vezes pode ser uma tarefa complicada. Diversos tipos de problemas dos mais inusitados podem acontecer. Nesta talk irei mostrar alguns dos loucos problemas que já passei desenvolvendo apps para React Native, e irei tentar mostrar algumas técnicas que uso para minimizar minhas dores de cabeça e aumentar o meu sono.",
+            image: "franze.jpeg",
+            url:"https://twitter.com/franzejr",
+
+        },
+        {
+            name: "Filipe Monteiro",
+            title: "Engenheiro Full Stack na Instinct Science",
+            talk_title: "React + Statecharts - Repensando seu frontend com máquina de estados",
+            talk_description: "Nesta palestra, vou conduzi-lo através de exemplos de renderização do lado do servidor incluindo a apresentação de uma case que faz uso de um roadblock comum para aplicativos React que falam com APIs.",
+            image: "filipemonteiro.jpeg",
+            url:"https://www.linkedin.com/in/filipemonteiroth/",
+
+        },
     ]
 });
 </script>
