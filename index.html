@@ -148,25 +148,31 @@
     <div class="section sponsors">
         <h1>Sponsors</h1>
         <div class="container">
-            <h3>Gold</h3>
+            <h2>Gold</h2>
             <div id='sponsors_gold'>
-                <a href="{sponsor_url}" target="_blank" class="gold-sponsor">
-                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
-                </a>
+                <div class="sponsor-photo-container">
+                    <a href="{sponsor_url}" target="_blank" class="gold-sponsor">
+                        <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                    </a>
+                </div>
             </div>
 
-            <h3>Silver</h3>
+            <h2>Silver</h2>
             <div id='sponsors_silver'>
-                <a href="{sponsor_url}" target="_blank" class="silver-sponsor">
-                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
-                </a>
+                <div class="sponsor-photo-container">
+                    <a href="{sponsor_url}" target="_blank" class="silver-sponsor">
+                        <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                    </a>
+                </div>
             </div>
 
-            <h3>Bronze</h3>
+            <h2>Bronze</h2>
             <div id='sponsors_bronze'>
-                <a href="{sponsor_url}" target="_blank" class="bronze-sponsor">
-                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
-                </a>
+                <div class="sponsor-photo-container">
+                    <a href="{sponsor_url}" target="_blank" class="bronze-sponsor">
+                        <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -273,19 +279,22 @@ self.contentBody = new Component('contentBody', {
             sponsor_name: 'Produto Reativo', sponsor_image: 'produtoreativo.png',
             sponsor_url: 'http://www.produtoreativo.com.br'
         },
-
+        {
+            sponsor_name: 'Fortes Tecnologia', sponsor_image: 'fortes.png',
+            sponsor_url: 'https://www.fortestecnologia.com.br/'
+        },
 
     ],
     sponsors_silver: [
         {
-            sponsor_name: '', sponsor_image: '',
-            sponsor_url: ''
+            sponsor_name: 'Casa Magalhães', sponsor_image: 'casamagalhaes.png',
+            sponsor_url: 'https://www.casamagalhaes.com.br/'
         }
     ],
     sponsors_bronze: [
         {
-            sponsor_name: '', sponsor_image: '',
-            sponsor_url: ''
+            sponsor_name: 'Unigex', sponsor_image: 'unigex.png',
+            sponsor_url: 'http://www.unigex.com.br/'
         }
     ],
     speakers: [
