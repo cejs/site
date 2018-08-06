@@ -299,11 +299,19 @@ a.active {
     color: #2C7BBF;
 }
 
-.gold-sponsor,
-.silver-sponsor,
-.bronze-sponsor {
-    margin-right: 40px;
+.sponsors h2 {
+    text-align: left;
+    margin: 20px 0;
+    border-bottom: 1px #efefef solid;
+    color: #2C7BBF;
+    padding-bottom: 10px;
 }
+
+.sponsor-photo-container {
+    margin: 10px;
+    display: inline;
+}
+
 .gold-sponsor img {
     width: 300px;
     vertical-align: middle;

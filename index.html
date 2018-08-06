@@ -148,25 +148,31 @@
     <div class="section sponsors">
         <h1>Sponsors</h1>
         <div class="container">
-            <h3>Gold</h3>
+            <h2>Gold</h2>
             <div id='sponsors_gold'>
-                <a href="{sponsor_url}" target="_blank" class="gold-sponsor">
-                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
-                </a>
+                <div class="sponsor-photo-container">
+                    <a href="{sponsor_url}" target="_blank" class="gold-sponsor">
+                        <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                    </a>
+                </div>
             </div>
 
-            <h3>Silver</h3>
+            <h2>Silver</h2>
             <div id='sponsors_silver'>
-                <a href="{sponsor_url}" target="_blank" class="silver-sponsor">
-                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
-                </a>
+                <div class="sponsor-photo-container">
+                    <a href="{sponsor_url}" target="_blank" class="silver-sponsor">
+                        <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                    </a>
+                </div>
             </div>
 
-            <h3>Bronze</h3>
+            <h2>Bronze</h2>
             <div id='sponsors_bronze'>
-                <a href="{sponsor_url}" target="_blank" class="bronze-sponsor">
-                    <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
-                </a>
+                <div class="sponsor-photo-container">
+                    <a href="{sponsor_url}" target="_blank" class="bronze-sponsor">
+                        <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -273,19 +279,22 @@ self.contentBody = new Component('contentBody', {
             sponsor_name: 'Produto Reativo', sponsor_image: 'produtoreativo.png',
             sponsor_url: 'http://www.produtoreativo.com.br'
         },
-
+        {
+            sponsor_name: 'Fortes Tecnologia', sponsor_image: 'fortes.png',
+            sponsor_url: 'https://www.fortestecnologia.com.br/'
+        },
 
     ],
     sponsors_silver: [
         {
-            sponsor_name: '', sponsor_image: '',
-            sponsor_url: ''
+            sponsor_name: 'Casa Magalhães', sponsor_image: 'casamagalhaes.png',
+            sponsor_url: 'https://www.casamagalhaes.com.br/'
         }
     ],
     sponsors_bronze: [
         {
-            sponsor_name: '', sponsor_image: '',
-            sponsor_url: ''
+            sponsor_name: 'Unigex', sponsor_image: 'unigex.png',
+            sponsor_url: 'http://www.unigex.com.br/'
         }
     ],
     speakers: [
@@ -331,6 +340,24 @@ self.contentBody = new Component('contentBody', {
             talk_description: "Nesta palestra, vou conduzi-lo através de exemplos de renderização do lado do servidor incluindo a apresentação de uma case que faz uso de um roadblock comum para aplicativos React que falam com APIs.",
             image: "filipemonteiro.jpeg",
             url:"https://www.linkedin.com/in/filipemonteiroth/",
+
+        },
+        {
+            name: "Rafael Dantas",
+            title: "Desenvolvedor Front-end na Valle Sistemas",
+            talk_title: "Houdini e o futuro mágico do CSS",
+            talk_description: "mostrarei o que é o projeto Houdini, quais são as propostas e como isso poderá mudar a forma de pensarmos e construirmos o nosso CSS. Chega de inconsistências, bem vindo ao futuro com Houdini!",
+            image: "rafael.jpg",
+            url:"https://twitter.com/RaffaelDantass",
+
+        },
+        {
+            name: "Alda Rocha",
+            title: "Senior UX Researcher na BeeTech",
+            talk_title: "Raio X de UX",
+            talk_description: "Vamos entender o que é UX. Como aplicamos dentro de um projeto, entender todas suas etapas e quais são seus entregáveis.",
+            image: "alda.jpg",
+            url:"https://twitter.com/mjcoffeeholick",
 
         },
     ]
