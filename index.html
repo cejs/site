@@ -15,6 +15,7 @@
     <div id="menu">
         <ul>
             <li><a href="https://www.sympla.com.br/cejs-2018__325338" title="Inscrições" target="_blank">Inscrições</a></li>
+            <li><a href="#scheduler" title="Agenda">Agenda</a></li>
             <li><a href="#speakers" title="Palestrantes">Palestrantes</a></li>
             <li><a href="#callforpapers" title="Call for Papers">Lightning Talks</a></li>
             <li><a href="#location" title="Local">Local</a></li>
@@ -33,20 +34,31 @@
 
     <a name="inscricoes"></a>
     <div class="section inscricoes">
-            <a class="button-small-text" href="https://www.sympla.com.br/cejs-2018__325338" target="_blank">
-                GARANTA SEU INGRESSO
-            </a>
+        <a class="button-small-text" href="https://www.sympla.com.br/cejs-2018__325338" target="_blank">
+            GARANTA SEU INGRESSO
+        </a>
+    </div>
+
+    <a name="scheduler"></a>
+    <div class="section scheduler">
+        <h1>Agenda - 06/Out</h1>
+        <div id='scheduler'>
+            <div class="schedule">
+                <span class="schedule-hour">{time}</span>
+                <h2 class="schedule-desc">{description}</h2>
+            </div>
+        </div>
     </div>
 
     <a name="speakers"></a>
     <div class="section speakers">
-        <h1>Palestras Confirmados</h1>
+        <h1>Palestras Confirmadas</h1>
         <div id='speakers'>
             <div class="speaker_talk">
                 <div class="left">
                     <div class="talk_details">
                         <h2>{talk_title}</h2>
-                        <!-- <p>{talk_description}</p> -->
+                        <p>{talk_description}</p>
                     </div>
                     <div class="speaker_details">
                         <a href="{url}" target="_blank"><h3>{name}</h3></a>
@@ -57,8 +69,6 @@
                     <img src="images/speakers/{image}" alt="{name}">
                 </a>
             </div>
-            
-            
         </div>
     </div>
 
@@ -66,6 +76,7 @@
     <div class="section callforpapers">
         <h1>Lightning Talks</h1>
         <h2>Apresentados no dia 02/06/2018 pra escolha de palestras</h2>
+        <span class="toggleLt" onclick="toggleLt()"> mostrar </span>
         <table class="schedule-grid" id="agenda-lt">
             <tr>
                 <td class="schedule-hour">08:30</td>
@@ -210,6 +221,24 @@
             </ul>
         </div>
     </div>
+
+<script type="text/javascript">
+    function toggleLt(e) {
+        console.log('toggleLt')
+        const className = ' opened'
+        const table = document.querySelector('.schedule-grid#agenda-lt');
+        const buttonShow = document.querySelector('.section.callforpapers .toggleLt');
+        if( table.className.includes(className) ){
+            console.log(className)
+            table.className = table.className.replace(className, '');
+            buttonShow.innerHTML='mostrar';
+        } else {
+            table.className += className;
+            buttonShow.innerHTML='esconder';
+        }
+        
+    }
+</script>
 
 <script type="text/javascript">
 function Component(elementId, data, propTemplate) {
@@ -360,6 +389,69 @@ self.contentBody = new Component('contentBody', {
             url:"https://twitter.com/mjcoffeeholick",
 
         },
+    ],
+    scheduler: [
+        {
+            time: '08:00',
+            description: 'Credenciamento / Welcome Coffee',
+        },
+        {
+            time: '08:40',
+            description: 'Abertura oficial',
+        },
+        {
+            time: '09:00',
+            description: '7 x 7 (7 palestras de 7 min)',
+        },
+        {
+            time: '10:00',
+            description: 'React SSR: Renderizar o React do lado do servidor',
+        },
+        {
+            time: '10:40',
+            description: 'Cypress, uma alternativa ao Selenium',
+        },
+        {
+            time: '11:20',
+            description: 'Raio X de UX',
+        },
+        {
+            time: '12:00',
+            description: 'Almoço',
+        },
+        {
+            time: '13:30',
+            description: 'SURPRESA!',
+        },
+        {
+            time: '14:00',
+            description: 'React + Statecharts - Repensando seu frontend com máquina de estados',
+        },
+        {
+            time: '14:40',
+            description: 'Perceived Performance',
+        },
+        {
+            time: '15:20',
+            description: 'Coffee break',
+        },
+        {
+            time: '16:00',
+            description: '(Try to) Avoid React Native development being a nightmare',
+        },
+        {
+            time: '16:40',
+            description: 'Houdini e o futuro mágico do CSS',
+        },
+        {
+            time: '17:20',
+            description: 'A confirmar',
+        },
+        {
+            time: '18:00',
+            description: 'Encerramento + sorteios + fofo oficial',
+        },
+       
     ]
 });
 </script>
