@@ -228,11 +228,21 @@ a.active {
 .block:hover .block-hover-text,
 .block:target .block-hover-text { opacity: 1; }
 
-.speakers, .schedule-grid {
+.schedule {
+    display: flex;
+    flex-direction: row;
+}
+
+.section.scheduler .schedule .schedule-desc {
+    margin: 0 0 0 20px;;
+    font-weight: normal;
+}
+
+.speakers, .schedule-grid, .schedule {
     margin: 0 auto;
     max-width: 960px;
 }
-.schedule-grid td {
+.schedule-grid td, .schedule {
     padding: 10px;
     border-top: 1px solid #EFEFEF;
 }
@@ -249,6 +259,25 @@ a.active {
 .schedule-grid h3 {
     margin: 8px 0 0;
 }
+
+.callforpapers .toggleLt {
+    border: 1px #aca8a8 solid;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+    right: 0;
+    float: right;
+    text-align: center;
+}
+
+.schedule-grid#agenda-lt {
+    display: none;
+}
+
+.schedule-grid#agenda-lt.opened {
+    display: block;
+}
+
 .schedule-grid p {
    font-size: 14px;
    line-height: 18px;
@@ -312,17 +341,18 @@ a.active {
     display: inline;
 }
 
+.gold-sponsor img, .silver-sponsor img, .bronze-sponsor img{
+    vertical-align: middle;
+    margin: 10px 5px;
+}
 .gold-sponsor img {
     width: 300px;
-    vertical-align: middle;
 }
 .silver-sponsor img {
     width: 240px;
-    vertical-align: middle;
 }
 .bronze-sponsor img {
     width: 180px;
-    vertical-align: middle;
 }
 
 .team-headers {
@@ -383,22 +413,14 @@ a.active {
     #team h1 { font-size: 35px; }
     #team.section { padding: 20px }
 
-    .schedule-grid tr {
-        position: relative;
-        display: block;
+    .schedule {
+        display: flex;
+        flex-direction: row;
         border-top: 1px solid #EFEFEF;
     }
-    .schedule-grid td {
-        border: none;
-    }
-    .schedule-hour {
-        padding: 20px !important;
-        text-align: right;
-    }
-    .schedule-photo {
-        position: absolute;
-        top: 0;
-        left: 0;
+    
+    .section.scheduler .schedule .schedule-desc {
+        margin-top: 0 ;
     }
     .speakers img {
         width: 120px;
