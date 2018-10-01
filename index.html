@@ -185,6 +185,14 @@
                     </a>
                 </div>
             </div>
+            <h2>Apoio</h2>
+            <div id='sponsors_support'>
+                <div class="sponsor-photo-container">
+                    <a href="{sponsor_url}" target="_blank" class="bronze-sponsor">
+                        <img src="images/sponsors/{sponsor_image}" alt="{sponsor_name}">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -331,7 +339,30 @@ self.contentBody = new Component('contentBody', {
         {
             sponsor_name: 'Unigex', sponsor_image: 'unigex.png',
             sponsor_url: 'http://www.unigex.com.br/'
+        },
+        {
+            sponsor_name: 'Instituto Atlântico', sponsor_image: 'ia.jpg',
+            sponsor_url: 'http://www.atlantico.com.br/'
         }
+    ],
+    sponsors_support: [
+        {
+            sponsor_name: 'Globo.com', sponsor_image: 'globo.png',
+            sponsor_url: 'http://dev.globo.com/'
+        },
+        {
+            sponsor_name: 'Microsoft', sponsor_image: 'microsoft.ico',
+            sponsor_url: 'https://developer.microsoft.com/en-us/'
+        },
+        {
+            sponsor_name: 'Valle Sistemas', sponsor_image: 'vallesistemas.png',
+            sponsor_url: 'https://vallesistemas.com.br/'
+        },
+        {
+            sponsor_name: 'Beetech', sponsor_image: 'beetech.svg',
+            sponsor_url: 'https://www.beetech.global/'
+        },
+
     ],
     speakers: [
         {
@@ -395,6 +426,27 @@ self.contentBody = new Component('contentBody', {
             image: "alda.jpg",
             url:"https://twitter.com/mjcoffeeholick",
 
+        },
+        {
+            name: "Mariana Fontenele",
+            title: "Desenvolvedora Frontend na GreenMIle",
+            talk_title: "7 minutos para aprender a aprender",
+            talk_description: "Dicas para aprimorar o estudo e aprendizado independente do assunto desejado.",
+            image: "marianafontenele.jpg",
+        },
+        {
+            name: "Adriana Fontenele",
+            title: "Head de Produtos Digitais no SAS Plataforma de Educação",
+            talk_title: "UX design para a estratégia de produtos e diferencial competitivo",
+            talk_description: "Atualmente, existe a necessidade de que as soluções se apresentem de forma simples e intuitiva, para que uma pessoa que tenha habilidades e experiências comuns possa usufruir deles sem que se sinta frustrada.Esta apresentação tem por finalidade apresentar a importância de User Experience (UX) no desenvolvimento de produtos. E ainda, apresentar algumas vantagens baseadas nas experiências dos usuários.",
+            image: "adrianafontenele.jpeg",
+        },
+        {
+            name: "Lenderson Morais",
+            title: "Desenvolvedor Front-end no SAS Plataforma de Educação",
+            talk_title: "Render functions no Vue.js",
+            talk_description: "Normalmente, quando criamos aplicações em Vue.js, utilizamos templates para definir o HTML dos componentes, porém haverá situações em que será necessário todo o poder do javascript. É nesse momento que as render functions tornam-se uma ótima alternativa. Nessa talk irei falar um pouco sobre as render functions e os melhores casos de uso delas no Vue.js.",
+            image: "Lenderson.jpeg",
         },
     ],
     scheduler: [
