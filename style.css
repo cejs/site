@@ -341,7 +341,10 @@ a.active {
     display: inline;
 }
 
-.gold-sponsor img, .silver-sponsor img, .bronze-sponsor img{
+.gold-sponsor img,
+.silver-sponsor img,
+.bronze-sponsor img 
+.support-sponsor img {
     vertical-align: middle;
     margin: 10px 5px;
 }
@@ -353,6 +356,10 @@ a.active {
 }
 .bronze-sponsor img {
     width: 180px;
+}
+
+.support-sponsor img {
+    width: 100px;
 }
 
 .team-headers {
