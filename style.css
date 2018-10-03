@@ -336,6 +336,10 @@ a.active {
     padding-bottom: 10px;
 }
 
+.sponsors  a[href]:hover {
+    text-decoration: none;
+}
+
 .sponsor-photo-container {
     margin: 10px;
     display: inline;
