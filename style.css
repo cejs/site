@@ -363,7 +363,16 @@ a.active {
 }
 
 .support-sponsor img {
+    width: 70px;
+}
+.support-sponsor img.hostweb {
     width: 100px;
+    height: 100px;
+}
+
+.support-sponsor img.vallesistemas {
+    height: 50px;
+    width: 130px;
 }
 
 .team-headers {
